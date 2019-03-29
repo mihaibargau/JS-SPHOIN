@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="dashboard.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+	<title>Dashboard</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mx-auto" >LOGO</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active" style="margin-left: 300px">
+          <a class="nav-link" href="#">DASHBOARD</a>
+        </li>
+        <li class="nav-item" style="margin-left: 300px"> 
+          <a class="nav-link" href="#">BACKGROUND</a>
+        </li>
+        <li class="nav-item" style="margin-left: 300px">
+          <a class="nav-link" href="#">ACCOUNT</a>
+        </li>
+      </ul>
+  </nav>
+  <p>PRICE GRAPH</p>
+  <canvas id="chartjs-0" class="chartjs" width="770" height="385" style="display: block; width: 770px; height: 385px;"></canvas>
+  <script> new Chart(document.getElementById("chartjs-0"), {
+    "type": "line",
+    "data": {
+        "labels": ["January", "February", "March", "April", "May", "June", "July"],
+        "datasets": [{
+            "label": "COIN",
+            "data": [65, 59, 80, 81, 56, 55, 40],
+            "fill": false,
+            "borderColor": "rgb(75, 192, 192)",
+            "lineTension": 0.1
+        }]
+    },
+    "options": {
+      responsive: false
+    }
+}); 
+</script>
+<p>STRATEGY GRAPH</p>
+<canvas id="chartjs-1" class="chartjs" width="770" height="385" style="display: block; width: 770px; height: 385px;"></canvas>
+<script> new Chart(document.getElementById("chartjs-1"), {
+  "type": "line",
+  "data": {
+      "labels": ["January", "February", "March", "April", "May", "June", "July"],
+      "datasets": [{
+          "label": "COIN",
+          "data": [65, 59, 80, 81, 56, 55, 40],
+          "fill": false,
+          "borderColor": "rgb(75, 192, 192)",
+          "lineTension": 0.1
+      }]
+  },
+  "options": {
+    responsive: false
+  }
+}); 
+</script>
+<p>STRATEGY 2</p>
+<canvas id="chartjs-2" class="chartjs" width="770" height="385" style="display: block; width: auto; height: 385px;"></canvas>
+<script> new Chart(document.getElementById("chartjs-2"), {
+  "type": "line",
+  "data": {
+      "labels": ["January", "February", "March", "April", "May", "June", "July"],
+      "datasets": [{
+          "label": "COIN",
+          "data": [65, 59, 80, 81, 56, 55, 40],
+          "fill": false,
+          "borderColor": "rgb(75, 192, 192)",
+          "lineTension": 0.1
+      }]
+  },
+  "options": {
+    responsive: false
+  }
+}); 
+</script>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">ADD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">PAID</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">EMPTY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">STRATEGY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SLOT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BUTTON</a>
+      </li>
+    </ul>
+</nav>
+
+
+
+</body>
+</html>
