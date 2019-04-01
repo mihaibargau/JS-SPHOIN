@@ -5,7 +5,6 @@ function forgotPassword()
     var method = 'GET';
     var url = 'https://cors.io/?http://54.211.9.51:8000';
     xhr.open(method, url + '/' + 'user_forgot' + '/' + email + '/');
-    console.log(url + '/' + 'user_forgot' + '/' + email + '/');
     xhr.send();
     xhr.onreadystatechange = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
