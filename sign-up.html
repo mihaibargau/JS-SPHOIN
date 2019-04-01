@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<title>Login Page</title>
+	<title>Sign up</title>
    
 	<!--Bootsrap CDN-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,7 +21,7 @@
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3>Sign In</h3>
+				<h3>Sign up</h3>
 				<div class="d-flex justify-content-end social_icon">
 				</div>
 			</div>
@@ -33,32 +33,38 @@
 						</div>
 						<input type="text" id="username" class="form-control" placeholder="username">
 						
-					</div>
+                    </div>
+                    <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="text" id="email" class="form-control" placeholder="email">
+                            
+                        </div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
 						<input type="password" id="password" class="form-control" placeholder="password">
-					</div>
-					<div class="row align-items-center remember">
-						<input type="checkbox">Remember Me
-					</div>
+                    </div>
+                    
 					<div class="form-group">
-						<button type="button" class="btn float-right login_btn" onclick="getInput()">Log in</button>
+						<button type="button" class="btn float-right login_btn" onclick="signUp()">Sign up</button>
 					</div>
 				</form>
-			</div>
+            </div>
 			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="sign-up.html">Sign Up</a>
-				</div>
+                    <div class="d-flex justify-content-center links">
+                            Already have an account?<a href="login.html">Sign In</a>
+                        </div>
 				<div class="d-flex justify-content-center">
 					<a href="forgot-password.html">Forgot your password?</a>
-				</div>
+                </div>
+                
 			</div>
 		</div>
     </div>
 </div>
 </body>
-<script src="script.js"></script>
+<script src="sign-up.js"></script>
 </html>
