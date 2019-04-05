@@ -10,8 +10,10 @@ function getInput()
     xhr.onreadystatechange = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var response = JSON.parse(xhr.responseText);
-            if (response.status == 'logged_in')
+            if (response.status == 'logged_in'){
             window.location.assign('dashboard.html');
+            
+        }
             else 
                  alert("Invalid credentials");
             
