@@ -1,6 +1,7 @@
 function getInput()
 {
     var user = document.getElementById("username").value;
+    // Cookies.set('user', user);
     var pass = document.getElementById("password").value;
     var xhr = new XMLHttpRequest();
     var method = 'GET';

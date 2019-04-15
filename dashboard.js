@@ -16,6 +16,7 @@ $(document).ready(function() {
 
 
 $('#select-exchange').on('select2:select', function (e) {
+    // alert(Cookies.get('user'));
    //---data from routes---
    if (e.params.data.text == 'FXCM') {
     var getFxcmCoins = 'http://54.211.9.51:8000/sphoin/fxcm/USER/basecoin/';
