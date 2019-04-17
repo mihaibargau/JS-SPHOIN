@@ -13,8 +13,9 @@ function request(url)
 
 $(document).ready(function() {
     
-   var getExchanges = request('http://cors.io/?http://35.156.51.182:8000/sphoin/crypto/user/exchanges/');
-   console.log(getExchanges);
+   request('http://35.156.51.182:8000/user_login/user/userp/');
+   var getExchanges = request('http://35.156.51.182:8000/sphoin/crypto/user/exchanges/');
+
    //var getExchanges = ['FXCM', 'BINANCE'];
    // data to populate first selector + FXCM
    $('.select-exchange').select2({
